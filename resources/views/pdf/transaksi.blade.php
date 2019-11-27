@@ -58,9 +58,8 @@
             <img src="{{config('assets.logo')}}" width="80%" alt="">
         </div>
         <div class="text">
-            <div class="title bold">GARMEN</div>
             <div class="title bold">CV TARUM BALI</div>
-            <div class="title bold">Nama jalan dan telepon</div>
+            <div class="title bold">Jalan Cucukan Lama Gg. Nusantara No. 6, Medahan,Blahbatuh, Medahan, Kec. Gianyar, Kabupaten Gianyar, Bali</div>
         </div>
     </div>
     <div class="section text-center">
@@ -115,12 +114,11 @@
     <br>
     <br>
     <div class="tte-left">
-       <div>Garmen</div>
-       <div>Kepala Garmen</div>
+       <div>Owner</div>
        <br>
        <br>
-       <div>Nama Pemilik Garnen</div>
-       <div>197011291997031001</div>
+       <div>I Made Arsana Yasa</div>
+       {{-- <div>197011291997031001</div> --}}
     </div>
     
     {{-- <div class="tte-right">

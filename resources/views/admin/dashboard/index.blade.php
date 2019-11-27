@@ -19,15 +19,7 @@
 
         <!-- Main content -->
         <section class="content">
-            @if (auth()->user()->role == 'Operator')
-                @if ( (int) \Carbon\Carbon::now()->format('d') < 11)
-                    <div class="alert alert-danger" role="alert">
-                        <h4 class="alert-heading">PERINGATAN</h4>
-                        <p>SILAKAN MELAKUKAN PELAPORAN LAPORAN PERTANGGUNG JAWABAN </p>
-                        <p class="mb-0"></p>
-                    </div>
-                @endif
-            @endif
+            
             
             <div class="row">
                 <div class="col-lg-3 col-6">
