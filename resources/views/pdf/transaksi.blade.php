@@ -89,10 +89,18 @@
                 </tr>
             </thead>
             <tbody>
+                @php
+                    $total = 0;    
+                @endphp
                 @foreach($data as $key => $row)
                     <tr>
                         <td>{{$key+1}}</td>
                         @foreach ($form as $item)
+                            @php
+                                if($item['name'] == 'total'){
+                                    $total += $row->total;
+                                }
+                            @endphp
                             @if (array_key_exists('view_index',$item) && $item['view_index'])
                                 <td @if(array_key_exists('format',$item) && $item['format'] == 'rupiah') style="text-align:right" @endif>
                                     @if (array_key_exists('view_relation',$item))
@@ -109,6 +117,10 @@
                         @endforeach
                     </tr>
                 @endforeach
+                    <tr>
+                        <td colspan="5" style="text-align: right;font-weight:bold">Total</td>
+                        <td>Rp {{number_format($total,2,',','.')}}</td>
+                    </tr>
             </tbody>
         </table>
     <br>
